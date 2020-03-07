@@ -28,5 +28,8 @@
     "react-dom": "^16.12.0",
     "umi": "^3.0.4",
     "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@umijs/preset-ui": "^2.0.1"
   }
 }
