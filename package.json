@@ -3,6 +3,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "postinstall": "umi g tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
@@ -19,14 +20,29 @@
     ]
   },
   "dependencies": {
+    "@ant-design/compatible": "^0.0.1-rc.1",
+    "@ant-design/icons": "^4.0.2",
+    "@antv/data-set": "^0.11.1",
+    "@types/lodash.debounce": "^4.0.6",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.4",
     "antd": "^3.26.12",
+    "bizcharts": "^3.5.8",
+    "bizcharts-plugin-slider": "^2.1.1",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
     "lint-staged": "^10.0.7",
+    "lodash.debounce": "^4.0.8",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-fittext": "^1.0.0",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.5",
     "umi": "^3.0.4",
+    "umi-request": "^1.2.19",
     "yorkie": "^2.0.0"
   },
   "devDependencies": {

@@ -1,16 +1,21 @@
 import React from 'react';
-import styles from './index.module.less';
-import TableBasic from './TableBasic';
-import Hello from '@/components/Hello';
-import Demo from './Demo';
+import { Button } from 'antd';
+import { setLocale, useIntl } from 'umi';
+import styles from './index.less';
 
-export default ({ className }) => {
+export default (props) => {
+  const { formatMessage } = useIntl();
+  const [count, setCount] = React.useState(0)
+  const handleClick = () => {
+    throw new Error('hello');
+    setCount(count => count + 1);
+  }
   return (
-    <div className={className}>
-      <h1 className={styles.title}>Page index</h1>
-      <Hello className={styles.hello2} />
-      <TableBasic />
-      <Demo />
+    <div className={styles.normalHello}>
+      <h1>Page index</h1>
+      {formatMessage({ id: 'hello' })}
+      <Button onClick={handleClick}>Add</Button>
+      <p>{count}</p>
     </div>
   );
 };
