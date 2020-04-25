@@ -4,7 +4,8 @@ export default defineConfig({
   ssr: {
     // stream: true,
   },
-  dynamicImport: {},
+  // support
+  // dynamicImport: {},
   antd: {
     compact: true,
   },
